@@ -1,0 +1,29 @@
+<html>
+
+<body>
+
+<div>
+    <form method="post">
+        <input type="text" name="text" placeholder="ВВОд">
+        <input type="text" name="tag" placeholder="tTAAGGG">
+        <button type="submit">ADD</button>
+    </form>
+</div>
+
+
+<div>
+    <div>Meesages list</div>
+    {{#messages}}
+    <div>
+        <b>{{id}}</b>
+        <span>{{text}}</span>
+        <i>tag</i>
+    </div>
+    {{/messages}}
+
+</div>
+
+</body>
+
+
+</html>
