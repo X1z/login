@@ -13,13 +13,6 @@
     <version>2.0.2.RELEASE</version>
     </parent>
 
-    echo "# login" >> README.md
-    git init
-    git add README.md
-    git commit -m "first commit"
-    git remote add origin https://github.com/X1z/login.git
-    git push -u origin master
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

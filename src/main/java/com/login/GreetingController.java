@@ -1,6 +1,8 @@
 package com.login;
 import com.login.domain.Message;
+import com.login.domain.User;
 import com.login.resp.MessageRepo;
+import com.login.resp.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +17,10 @@ public class GreetingController {
 
     @Autowired
     private MessageRepo messageRepo;
+
+    @Autowired
+    private UserRepo userRepo;
+
 
     @GetMapping("/greeting")
     public String greeting(
@@ -47,6 +53,44 @@ public class GreetingController {
         model.put("messages",messages);
 
         return "main";
+    }
+
+
+    @GetMapping("/register")
+    public String register(Map<String,Object> model){
+
+        return "register";
+
+    }
+
+
+    @PostMapping("/register")
+    public String register(@RequestParam String login, @RequestParam String password, @RequestParam String name, @RequestParam String email, Map<String,Object> model){
+
+        User user = new User(name, login, password, email);
+        userRepo.save(user);
+
+
+        return "register";
+    }
+
+    @PostMapping("/register1")
+    public String register1(@RequestParam String login, @RequestParam String password1, @RequestParam String name, @RequestParam String email, Map<String,Object> model){
+
+        User user = new User(name, login, password1, email);
+        userRepo.save(user);
+
+
+        return "register";
+    }
+
+    @PostMapping("/allusers")
+    public String allusers(Map<String,Object> model){
+
+        Iterable<User> users = userRepo.findAll();
+        model.put("users",users);
+
+        return "allusers";
     }
 
 
