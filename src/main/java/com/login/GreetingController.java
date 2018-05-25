@@ -65,9 +65,9 @@ public class GreetingController {
 
 
     @PostMapping("/register")
-    public String register(@RequestParam String login, @RequestParam String password, @RequestParam String name, @RequestParam String email, Map<String,Object> model){
+    public String register(User user){
 
-        User user = new User(name, login, password, email);
+        //User user = new User(name, login, password, email);
         userRepo.save(user);
 
 

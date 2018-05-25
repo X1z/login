@@ -8,6 +8,7 @@ import javax.persistence.Id;
 /**
  * Created by X1z on 24.05.2018.
  */
+
 @Entity
 public class User {
     @Id
