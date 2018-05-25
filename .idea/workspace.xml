@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f85e0b83-2487-43dd-bf83-7cef00805432" name="Default" comment="укук">
+    <list default="true" id="f85e0b83-2487-43dd-bf83-7cef00805432" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="login.iws" />
@@ -143,6 +143,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -875,7 +881,7 @@
       <workItem from="1527096670313" duration="11529000" />
       <workItem from="1527115255894" duration="16587000" />
       <workItem from="1527231916891" duration="195000" />
-      <workItem from="1527232135588" duration="642000" />
+      <workItem from="1527232135588" duration="728000" />
     </task>
     <task id="LOCAL-00001" summary="укук">
       <created>1527232502219</created>
@@ -898,11 +904,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527232652746</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="укук">
+      <created>1527232815687</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1527232815687</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32535000" />
+    <option name="totallyTimeSpent" value="32621000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1934" height="1047" extended-state="0" />
